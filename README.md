@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=insertion)](https://travis-ci.org/fordf/sorting-algorithms)
+
 # sorting-algorithms
 
 ### Insertion Sort

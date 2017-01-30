@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=insertion)](https://travis-ci.org/fordf/sorting-algorithms)
 
-# sorting-algorithms
+# Sorting Algorithms
 
 ### Insertion Sort
 For each element in the given list, compare it's value to the previous elements one

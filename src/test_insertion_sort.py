@@ -1,5 +1,6 @@
 """Tests for insertion sort function."""
 import pytest
+from random import randint
 
 LISTS = [
     ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
@@ -15,3 +16,12 @@ def test_insertion_sort(unsorted_lst, sorted_lst):
     """."""
     from insertion_sort import insertion_sort
     assert insertion_sort(unsorted_lst) == sorted_lst
+
+
+def test_insertion_sort_against_python_sort():
+    """Test insertion sort against python's sort method."""
+    from insertion_sort import insertion_sort
+    input_list = [randint(0, 100000) for i in range(1000)]
+    test_list = insertion_sort(input_list)
+    input_list.sort()
+    assert test_list is input_list

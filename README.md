@@ -10,7 +10,10 @@ than the current element, continue on to the next unsorted element.
 
 Module: [insertion_sort](https://github.com/fordf/sorting-algorithms/blob/insertion/src/insertion_sort.py)
 
-Time Complexity: O(n<sup>2</sup>)
+Time Complexity: 
+* best-case: O(n)
+* average-case: O(n<sup>2</sup>)
+* worst-case: O(n<sup>2</sup>)
 
 
 

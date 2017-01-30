@@ -8,4 +8,4 @@ def insertion_sort(iterable):
         while new > 0 and iterable[new - 1] > iterable[new]:
             iterable[new], iterable[new - 1] = iterable[new - 1], iterable[new]
             new = new - 1
-    return input
+    return iterable

@@ -2,7 +2,7 @@
 
 # Sorting Algorithms
 
-### Merge Sort
+## Merge Sort
 Take an unsorted list, recursively slice list segments in half until each item is
 on it's own.
 ```
@@ -32,7 +32,7 @@ Time Complexity:
 * average-case: O(n*log(n))
 * worst-case: O(n*log(n))
 
-### Insertion Sort
+## Insertion Sort
 For each element in the given list, compare it's value to the previous elements one
 at a time. If the current element is smaller than the previous element, swap them,
 and compare against the new previous element. Once the previous element is smaller

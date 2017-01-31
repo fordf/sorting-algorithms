@@ -1,6 +1,36 @@
-[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=insertion)](https://travis-ci.org/fordf/sorting-algorithms)
+[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=merge)](https://travis-ci.org/fordf/sorting-algorithms)
 
 # Sorting Algorithms
+
+### Merge Sort
+Take an unsorted list, recursively slice list segments in half until each item is
+on it's own.
+```
+[4, 2, 8, 1]
+ |
+ V
+[4, 2] [8, 1]
+ |
+ V
+[4] [2]  [8] [1]
+```
+Go back up stack trace, merging pairs of list segments in sorted order.
+```
+[4] [2]  [8] [1]
+ |
+ V
+[2, 4] [1, 8]
+ |
+ V
+[1, 2, 4, 8]
+```
+
+Module: [merge_sort](https://github.com/fordf/sorting-algorithms/blob/merge/src/merge_sort.py)
+
+Time Complexity:
+* best-case: O(n*log(n))
+* average-case: O(n*log(n))
+* worst-case: O(n*log(n))
 
 ### Insertion Sort
 For each element in the given list, compare it's value to the previous elements one

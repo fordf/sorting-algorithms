@@ -2,15 +2,13 @@
 
 
 def merge_sort(iterable):
-    """Sort an iterable."""
+    """Sort an iterable by dividing into two sublistst."""
     if len(iterable) <= 1:
         return iterable
 
-    # divide list into equal-sublists
     left = iterable[:(len(iterable) // 2)]
     right = iterable[(len(iterable) // 2):]
 
-    # revursively sort both sublists
     left = merge_sort(left)
     right = merge_sort(right)
 
@@ -35,3 +33,25 @@ def _merge(left, right):
         result.append(right[0])
         right = right[1:]
     return result
+
+
+if __name__ == '__main__':
+    import timeit
+    from random import randint
+
+    input1 = [2, 1]
+    input2 = [randint(0, 100000) for i in range(1000)]
+
+    print('merge sort is an efficient, general-purpose, comparison-based sorting algorithm.')
+
+    print('Timing for input [2, 1]: \n' +
+
+          str(timeit.timeit(stmt="merge_sort(input1)",
+                            setup='from __main__ import merge_sort, input1',
+                            number=500)) +
+          '\naverage time over 500 runs')
+    print('Timing for [randint(0, 100000) for i in range(1000)]:\n' +
+          str(timeit.timeit(stmt="merge_sort(input2)",
+                            setup='from __main__ import merge_sort, input2',
+                            number=500)) +
+          '\naverage time over 500 runs')

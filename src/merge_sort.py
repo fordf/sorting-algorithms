@@ -35,7 +35,7 @@ def _merge(left, right):
     return result
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     import timeit
     from random import randint
 

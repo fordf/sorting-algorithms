@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=merge)](https://travis-ci.org/fordf/sorting-algorithms)
+[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=master)](https://travis-ci.org/fordf/sorting-algorithms)
 
 # Sorting Algorithms
 

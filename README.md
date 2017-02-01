@@ -2,7 +2,18 @@
 
 # Sorting Algorithms
 
-### Merge Sort
+## Quick Sort
+Quicksort first divides a large list into two smaller sub-lists: the low elements and the high elements. Quicksort can then recursively sort the sub-lists. The main difference to merge sort is choosing a 'pivot' point to sort around on the division into sublists.
+
+
+Module: [merge_sort](https://github.com/fordf/sorting-algorithms/blob/merge/src/quick_sort.py)
+
+Time Complexity:
+* best-case: O(n*log(n))
+* average-case: O(n*log(n))
+* worst-case: O(n<sup>2</sup>)
+
+## Merge Sort
 Take an unsorted list, recursively slice list segments in half until each item is
 on it's own.
 ```
@@ -32,7 +43,7 @@ Time Complexity:
 * average-case: O(n*log(n))
 * worst-case: O(n*log(n))
 
-### Insertion Sort
+## Insertion Sort
 For each element in the given list, compare it's value to the previous elements one
 at a time. If the current element is smaller than the previous element, swap them,
 and compare against the new previous element. Once the previous element is smaller

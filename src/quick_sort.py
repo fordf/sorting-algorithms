@@ -4,14 +4,13 @@
 def quick_sort(lst):
     """Sort all the things."""
     if len(lst) > 1:
-
         pivot = partition(lst)
         return quick_sort(lst[:pivot]) + [lst[pivot]] + quick_sort(lst[pivot + 1:])
     return lst
 
 
 def partition(lst):
-    """."""
+    """Divide list into two sublists and sort around a pivot point."""
     pivot = lst[-1]
     swap_at = 0
     for i in range(len(lst) - 1):

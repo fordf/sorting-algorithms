@@ -11,7 +11,7 @@ def insertion_sort(iterable):
     return iterable
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     import timeit
     from random import randint
 

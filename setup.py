@@ -11,7 +11,7 @@ setup(
     author_email=["fordjfowler@gmail.com", "clairejgatenby@gmail.com"],
     licencse="MIT",
     package_dir={'': 'src'},
-    py_modules=["insertion_sort"],
+    py_modules=["insertion_sort", 'quick_sort', 'merge_sort'],
     extras_require={
         "test": ["pytest", "pytest-cov", "tox"]
     }

@@ -21,7 +21,7 @@ def partition(lst):
     return swap_at
 
 
-if __name__ == '__main__':  
+if __name__ == '__main__':
     import timeit
     from random import randint
 

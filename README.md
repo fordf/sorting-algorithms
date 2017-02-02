@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=radix)](https://travis-ci.org/fordf/sorting-algorithms)
+[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=radix)](https://travis-ci.org/fordf/sorting-algorithms)[![Coverage Status](https://coveralls.io/repos/github/fordf/sorting-algorithms/badge.svg?branch=radix)](https://coveralls.io/github/fordf/sorting-algorithms?branch=radix)
 
 # Sorting Algorithms
 

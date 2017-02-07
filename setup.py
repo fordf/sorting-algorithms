@@ -13,6 +13,6 @@ setup(
     package_dir={'': 'src'},
     py_modules=["insertion_sort", 'quick_sort', 'merge_sort'],
     extras_require={
-        "test": ["pytest", "pytest-cov", "tox"]
+        "test": ["pytest", "pytest-cov", "tox", 'coveralls']
     }
 )

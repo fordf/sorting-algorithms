@@ -26,13 +26,7 @@ def _merge(left, right):
             result.append(right[0])
             right = right[1:]
 
-    while left:
-        result.append(left[0])
-        left = left[1:]
-    while right:
-        result.append(right[0])
-        right = right[1:]
-    return result
+    return result + left + right
 
 
 if __name__ == '__main__':  # pragma: no cover

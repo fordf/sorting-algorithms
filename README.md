@@ -1,6 +1,32 @@
-[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=merge)](https://travis-ci.org/fordf/sorting-algorithms)
+[![Build Status](https://travis-ci.org/fordf/sorting-algorithms.svg?branch=radix)](https://travis-ci.org/fordf/sorting-algorithms) [![Coverage Status](https://coveralls.io/repos/github/fordf/sorting-algorithms/badge.svg?branch=radix)](https://coveralls.io/github/fordf/sorting-algorithms?branch=radix)
 
 # Sorting Algorithms
+
+## Radix Sort
+Put each number into a bucket corresponding to it's least significant digit. For example,
+247 would go into bucket 7. Take your buckets (a list of lists), and flatten it, then repeat
+for the next-most least significant digit. For 247 that'd be 4.
+
+Module: [radix_sort](https://github.com/fordf/sorting-algorithms/blob/insertion/src/radix_sort.py)
+
+Time Complexity:
+* best-case: O(kn)
+* average-case: O(kn)
+* worst-case: O(kn)
+where k is the number of digits in the biggest number
+
+
+## Quick Sort
+Quicksort first divides a large list into two smaller sub-lists: the low elements and the high elements. Quicksort can then recursively sort the sub-lists. The main difference to merge sort is choosing a 'pivot' point to sort around on the division into sublists.
+
+
+Module: [merge_sort](https://github.com/fordf/sorting-algorithms/blob/merge/src/quick_sort.py)
+
+Time Complexity:
+* best-case: O(n*log(n))
+* average-case: O(n*log(n))
+* worst-case: O(n<sup>2</sup>)
+
 
 ## Merge Sort
 Take an unsorted list, recursively slice list segments in half until each item is

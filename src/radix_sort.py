@@ -2,7 +2,7 @@
 
 
 def radix_sort(lst):
-    """Sort a list of numbers from lowest to highest."""
+    """Sort a list of positive numbers from lowest to highest."""
     if lst:
         max_digit = max([len(str(num)) for num in lst])
 
@@ -13,9 +13,7 @@ def radix_sort(lst):
                 idx = num % (10 ** (digit + 1)) // (10 ** digit)
                 buckets[idx].append(num)
 
-            lst = []
-            for bucket in buckets:
-                lst += bucket
+            lst = [n for bucket in buckets for n in bucket]
     return lst
 
 
